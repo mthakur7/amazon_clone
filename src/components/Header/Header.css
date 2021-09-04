@@ -1,0 +1,246 @@
+.header {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  padding: 2px 10px;
+  /* justify-content: space-evenly; */
+}
+
+/* menuicon */
+.menu_icon {
+  border: 2px solid grey;
+  color: white;
+  border-radius: 3px;
+}
+.menu_icon:hover {
+  border-color: white;
+  cursor: pointer;
+}
+/* sidebar */
+.menuFooter {
+  margin-left: 10px;
+  font-weight: 500;
+}
+.ant-drawer-body {
+  overflow: hidden;
+}
+.menu_body p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu_body_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu_body p {
+  font-weight: 500;
+}
+/* this class is not present in our header.js but present inside Drawer component, I have taken this using developers tool */
+.ant-drawer-title,
+.anticon-close {
+  color: #fff !important;
+}
+
+/* amazon logo */
+.header_logo img {
+  margin: 10px;
+  margin-top: 20px;
+  width: 100px;
+  cursor: pointer;
+}
+/* searchbar */
+.header_searchbar {
+  width: 75%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header_searchselect {
+  width: 15%;
+}
+.header_searchselect select {
+  height: 35px;
+  width: 100%;
+  background-color: rgb(220, 220, 228);
+  text-align: center;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(220, 220, 228);
+  padding-left: 10px;
+  cursor: pointer;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  color: black;
+}
+.header_searchselect select:hover {
+  border: 2px solid rgb(238, 176, 61);
+}
+.header_searchselect select:active {
+  border: 2px solid rgb(238, 176, 61);
+  background-color: rgb(199, 199, 204);
+}
+.header_searchselect option {
+  background-color: rgb(255, 255, 255);
+  color: rgb(148, 95, 17);
+
+}
+.header_searchselect option:nth-child(2n) {
+  background-color: rgb(252, 248, 248);
+  color: rgb(44, 43, 43);
+}
+
+.header_form {
+  height: 35px;
+  width: 85%;
+}
+.header_searchbar form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header_searchbar input {
+  height: 35px;
+  outline: none;
+  width: 96%;
+  font-size: 15px;
+  border: 2px solid white;
+  color: black;
+}
+.header_searchbar input:focus {
+  border: 2px solid rgb(209, 207, 203);
+}
+.header_searchbutton {
+  background-color: rgb(255, 191, 72);
+  width: 50px;
+  height: 35px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 3px solid rgb(255, 191, 72);
+}
+.header_searchbutton:hover {
+  background-color: rgb(245, 176, 48);
+  border: 3px solid rgb(245, 176, 48);
+}
+.header_searchbutton:active {
+  background-color: rgb(255, 191, 72);
+  border: 3px solid rgb(255, 191, 72);
+}
+
+/* signin box */
+.header_signin {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 45px;
+  justify-content: center;
+  padding: 3px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: white;
+  min-width: 70px;
+  margin: 10px;
+}
+.header_signin:hover {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 2px;
+}
+.header_signin span:first-child {
+  font-size: 10px;
+}
+.header_signin span:last-child {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* returns orders box */
+.header_returns {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 5px;
+  height: 45px;
+  width: 70px;
+  justify-content: center;
+  padding: 3px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: white;
+}
+.header_returns:hover {
+  border: 1px solid white;
+  border-radius: 2px;
+}
+.header_returns span:first-child {
+  font-size: 10px;
+}
+.header_returns span:last-child {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* cart box */
+.header_cart {
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+  width: 50px;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: white;
+  margin: 10px;
+}
+.header_cart:hover {
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+.header_cart span {
+  margin: 0 5px;
+}
+
+@media (min-width: 700px) {
+  .header_menu {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .header_signin,
+  .header_returns {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .header_searchselect {
+    display: none;
+  }
+  .header_form {
+    width: 100%;
+  }
+  .header_logo img {
+    width: 70px;
+  }
+  .header_searchbar input {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+  .header_searchbutton {
+    width: 2%;
+  }
+}

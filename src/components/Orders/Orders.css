@@ -1,0 +1,48 @@
+.orders{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.orders_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    margin-top: 80px;
+    
+}
+
+.orders_cont > h1 {
+    margin: 10px;
+    width: 100%;
+    background-color: rgb(234, 237, 237);
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+.orders_cont h3{
+    color: gray;
+}
+.orders_noOrder{
+    margin: 5px;
+    max-width: 80%;
+    height: 400px;
+ 
+}
+
+.orders_cont button {
+    background-color: rgb(255, 191, 72);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;  
+    color: black;
+    padding: 5px 10px;
+  }
+  .orders_cont button:hover {
+    cursor: pointer;
+    background-color: rgb(245, 176, 48);
+  }
+  .orders_cont button:active {
+    background-color: rgb(255, 191, 72);
+  }

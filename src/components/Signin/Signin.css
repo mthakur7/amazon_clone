@@ -1,0 +1,85 @@
+.signin{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    width: 100vw;   
+}
+
+.signin img{  
+    width: 100px;
+    height: 30px;  
+    cursor: pointer;
+    color: black;
+    margin-top: 30px;
+}
+
+.signin div{    
+    border: 1px solid rgb(199, 192, 192);
+    margin-top: 20px;
+    padding: 10px;   
+}
+.signin div form{
+    display: flex;
+    flex-direction: column;  
+}
+
+.signin_box input{
+    height: 30px;
+    width: 306px;
+    border: 1px solid rgb(105, 99, 99);
+    margin: 5px 0px;
+    box-shadow: inset 0px 0px 2px gray;
+    border-radius: 2px;
+}
+.signin_box input:focus{
+    box-shadow: 0px 0px 5px rgb(253, 197, 42); 
+    outline: none;
+}
+.signin_box span{
+    display: block;
+    width: 306px;
+    font-size: 13px;
+}
+.signin_btn{
+    width: 306px;
+    height: 32px;
+    background-color: rgb(255, 191, 72);
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 10px 0px;
+
+}
+.signin_btn:hover{
+    cursor: pointer;
+background-color: rgb(241, 171, 41);
+}
+.signin_createbtn{
+    width: 306px;
+    height: 32px;
+    background-color: rgb(236, 235, 243);
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 10px 0px;
+
+
+}
+.signin_createbtn:hover{
+    cursor: pointer;
+background-color: rgb(212, 212, 212);
+}
+
+
+@media(max-width:400px){
+    .signin{
+        width: 100vw;
+    }
+    .signin div{
+        width: 80%;
+    }
+    .signin div input,.signin_box span ,.signin_btn,.signin_createbtn{
+        width: 98%;
+    }
+   
+
+}
