@@ -30,3 +30,4 @@ A small web app that tries to imitate the desktop web version of amazon site. It
 ✔ Firebase Hosting
 ✔ Stripe-js
 
+https://github-c5c88.firebaseapp.com/
